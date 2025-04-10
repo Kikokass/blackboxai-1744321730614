@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - INMOR Inmobiliaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#000080',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-navy">
+                    <a href="index.html">INMOR INMOBILIARIA</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-navy hover:text-gray-700">Inicio</a>
+                    <a href="desarrollos-campestres.html" class="text-navy hover:text-gray-700">Desarrollos Campestres</a>
+                    <a href="desarrollos-habitacionales.html" class="text-navy hover:text-gray-700">Desarrollos Habitacionales</a>
+                    <a href="promociones.html" class="text-navy hover:text-gray-700">Promociones</a>
+                    <a href="venta-casas.html" class="text-navy hover:text-gray-700">Venta de Casas</a>
+                    <a href="renta-casas.html" class="text-navy hover:text-gray-700">Renta de Casas</a>
+                    <a href="quienes-somos.html" class="text-navy hover:text-gray-700 font-bold">¿Quiénes Somos?</a>
+                    <a href="#contacto" class="text-navy hover:text-gray-700">Contacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-navy">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 text-navy hover:text-gray-700">Inicio</a>
+                <a href="desarrollos-campestres.html" class="block py-2 text-navy hover:text-gray-700">Desarrollos Campestres</a>
+                <a href="desarrollos-habitacionales.html" class="block py-2 text-navy hover:text-gray-700">Desarrollos Habitacionales</a>
+                <a href="promociones.html" class="block py-2 text-navy hover:text-gray-700">Promociones</a>
+                <a href="venta-casas.html" class="block py-2 text-navy hover:text-gray-700">Venta de Casas</a>
+                <a href="renta-casas.html" class="block py-2 text-navy hover:text-gray-700">Renta de Casas</a>
+                <a href="quienes-somos.html" class="block py-2 text-navy hover:text-gray-700 font-bold">¿Quiénes Somos?</a>
+                <a href="#contacto" class="block py-2 text-navy hover:text-gray-700">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">¿Quiénes Somos?</h1>
+            <p class="text-xl">Conoce nuestra historia y valores</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- Quiénes Somos -->
+                <div class="prose max-w-none">
+                    <p class="text-lg leading-relaxed mb-8">
+                        Somos una empresa socialmente responsable con un equipo de trabajo
+                        honesto, puntual y congruente con nuestros objetivos y valores.
+                        Actualmente, contamos con 8 desarrollos inmobiliarios ubicados en
+                        diversas áreas de los estados de Colima y Jalisco.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        La confianza depositada en nosotros por nuestros clientes nos ha
+                        permitido ofrecer propiedades en venta, brindándoles seguridad y
+                        respaldo en sus proyectos de vida, ya sea para comprar o vender su
+                        patrimonio.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        Nos enorgullece hacerlos partícipes de este emocionante viaje,
+                        ayudándolos a alcanzar sus metas y crecer junto a nosotros.
+                    </p>
+                </div>
+
+                <!-- Misión y Visión -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold text-navy mb-4">Misión</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Ofrecemos asesoramiento completo a individuos y empresas,
+                            resolviendo todas sus necesidades inmobiliarias para maximizar su
+                            rentabilidad, basados en valores de responsabilidad y transparencia.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold text-navy mb-4">Visión</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Ser reconocidos como la opción líder en el sector inmobiliario del estado
+                            de Colima, siendo la primera elección para aquellos que buscan vender,
+                            comprar o alquilar propiedades. Nos esforzamos por ofrecer una
+                            experiencia excepcional, priorizando siempre la satisfacción de nuestros
+                            clientes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Valores -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold text-navy mb-4">Nuestros Valores</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        En INMOR Inmobiliaria, la integridad, el profesionalismo y el respeto son
+                        nuestra brújula, guiándonos hacia un servicio de calidad y una relación
+                        sólida con la comunidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-4">Contáctanos</h2>
+                <p class="text-gray-600">Estamos aquí para ayudarte</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center space-y-4">
+                    <p class="text-gray-700">
+                        <i class="fas fa-map-marker-alt text-navy mr-2"></i>
+                        Avenida Anastasio Brizuela 10 Local 6B, Plaza Luxury
+                    </p>
+                    <p class="text-gray-700">
+                        <i class="fas fa-phone text-navy mr-2"></i>
+                        <a href="tel:3122232323" class="hover:text-navy">312 223 2323</a>
+                    </p>
+                    <p class="text-gray-700">
+                        <i class="fas fa-envelope text-navy mr-2"></i>
+                        <a href="mailto:inmorinmobiliaria@gmail.com" class="hover:text-navy">inmorinmobiliaria@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">INMOR INMOBILIARIA</h3>
+                <div class="flex justify-center space-x-4 mb-6">
+                    <a href="https://wa.me/523122232323" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/523123177438" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="#" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/inmorinmobiliaria" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+                <p class="text-sm">&copy; 2024 INMOR Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
