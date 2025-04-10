@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollos Campestres - INMOR Inmobiliaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#000080',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-navy">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="INMOR INMOBILIARIA" class="h-16">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-navy hover:text-gray-700">Inicio</a>
+                    <a href="desarrollos-campestres.html" class="text-navy hover:text-gray-700 font-bold">Desarrollos Campestres</a>
+                    <a href="desarrollos-habitacionales.html" class="text-navy hover:text-gray-700">Desarrollos Habitacionales</a>
+                    <a href="promociones.html" class="text-navy hover:text-gray-700">Promociones</a>
+                    <a href="venta-casas.html" class="text-navy hover:text-gray-700">Venta de Casas</a>
+                    <a href="renta-casas.html" class="text-navy hover:text-gray-700">Renta de Casas</a>
+                    <a href="quienes-somos.html" class="text-navy hover:text-gray-700">¿Quiénes Somos?</a>
+                    <a href="#contacto" class="text-navy hover:text-gray-700">Contacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-navy">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 text-navy hover:text-gray-700">Inicio</a>
+                <a href="desarrollos-campestres.html" class="block py-2 text-navy hover:text-gray-700 font-bold">Desarrollos Campestres</a>
+                <a href="desarrollos-habitacionales.html" class="block py-2 text-navy hover:text-gray-700">Desarrollos Habitacionales</a>
+                <a href="promociones.html" class="block py-2 text-navy hover:text-gray-700">Promociones</a>
+                <a href="venta-casas.html" class="block py-2 text-navy hover:text-gray-700">Venta de Casas</a>
+                <a href="renta-casas.html" class="block py-2 text-navy hover:text-gray-700">Renta de Casas</a>
+                <a href="quienes-somos.html" class="block py-2 text-navy hover:text-gray-700">¿Quiénes Somos?</a>
+                <a href="#contacto" class="block py-2 text-navy hover:text-gray-700">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Desarrollos Campestres</h1>
+            <p class="text-xl mb-8">Descubre la vida en armonía con la naturaleza</p>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- La Gran Sierra -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/158179/lake-constance-sheep-pasture-sheep-blue-158179.jpeg" alt="La Gran Sierra" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">La Gran Sierra</h3>
+                        <p class="text-gray-600 mb-4">Precio: $485 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>8 x 20 m</li>
+                                            <li>10 x 20 m</li>
+                                            <li>12 x 25 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$485 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loma Alta -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1483880/pexels-photo-1483880.jpeg" alt="Loma Alta" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Loma Alta</h3>
+                        <p class="text-gray-600 mb-4">Precio: $655 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>10 x 20 m</li>
+                                            <li>12 x 25 m</li>
+                                            <li>15 x 30 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$655 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La Cañada -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg" alt="La Cañada" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">La Cañada</h3>
+                        <p class="text-gray-600 mb-4">Precio: $695 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>10 x 25 m</li>
+                                            <li>12 x 30 m</li>
+                                            <li>15 x 35 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$695 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real Campestre -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg" alt="Real Campestre" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Real Campestre</h3>
+                        <p class="text-gray-600 mb-4">Precio: $255 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>8 x 16 m</li>
+                                            <li>10 x 20 m</li>
+                                            <li>12 x 24 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$255 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villas Marlen -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1048039/pexels-photo-1048039.jpeg" alt="Villas Marlen" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Villas Marlen</h3>
+                        <p class="text-gray-600 mb-4">Precio: $770 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>10 x 22 m</li>
+                                            <li>12 x 28 m</li>
+                                            <li>15 x 32 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$770 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Santa Teresita -->
+                <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/462136/pexels-photo-462136.jpeg" alt="Santa Teresita" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Santa Teresita</h3>
+                        <p class="text-gray-600 mb-4">Precio: $811 MXN/m²</p>
+                        <ul class="text-gray-600 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Todos los servicios (luz y toma de agua)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Calles empedradas</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Control de acceso</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Áreas de donación</li>
+                        </ul>
+                        <button class="info-button inline-block bg-navy text-white px-6 py-2 rounded hover:bg-blue-900">
+                            <i class="fas fa-info-circle mr-2"></i>Ver planos y medidas
+                        </button>
+                        <div class="details-section hidden mt-4">
+                            <div class="border-t pt-4">
+                                <h4 class="font-bold text-navy mb-2">Planos y Medidas</h4>
+                                <div class="bg-gray-100 p-4 text-center mb-4 rounded">
+                                    <i class="fas fa-map text-4xl text-navy mb-2"></i>
+                                    <p class="text-gray-600">Plano disponible en oficina</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <p class="font-bold">Medidas disponibles:</p>
+                                        <ul class="list-disc pl-4">
+                                            <li>12 x 25 m</li>
+                                            <li>15 x 30 m</li>
+                                            <li>18 x 35 m</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Precios desde:</p>
+                                        <p>$811 MXN/m²</p>
+                                        <p class="text-sm text-gray-600">Facilidades de pago disponibles</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://wa.me/523123177438" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                        <i class="fab fa-whatsapp mr-2"></i>Solicitar información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-4">¿Interesado en nuestros desarrollos?</h2>
+                <p class="text-gray-600">Contáctanos para más información</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center space-y-4">
+                    <p class="text-gray-700">
+                        <i class="fas fa-map-marker-alt text-navy mr-2"></i>
+                        Avenida Anastasio Brizuela 10 Local 6B, Plaza Luxury
+                    </p>
+                    <p class="text-gray-700">
+                        <i class="fas fa-phone text-navy mr-2"></i>
+                        <a href="tel:3122232323" class="hover:text-navy">312 223 2323 (Llamadas)</a>
+                    </p>
+                    <p class="text-gray-700">
+                        <i class="fab fa-whatsapp text-navy mr-2"></i>
+                        <a href="https://wa.me/523123177438" class="hover:text-navy">312 317 7438 (WhatsApp)</a>
+                    </p>
+                    <p class="text-gray-700">
+                        <i class="fas fa-envelope text-navy mr-2"></i>
+                        <a href="mailto:inmorinmobiliaria@gmail.com" class="hover:text-navy">inmorinmobiliaria@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">INMOR INMOBILIARIA</h3>
+                <div class="flex justify-center space-x-4 mb-6">
+                    <a href="https://wa.me/523123177438" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="#" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/inmorinmobiliaria" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+                <p class="text-sm">&copy; 2024 INMOR Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dropdowns and mobile menu -->
+    <script>
+        // Mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Property details dropdowns
+        document.querySelectorAll('.property-card').forEach(card => {
+            const infoButton = card.querySelector('.info-button');
+            const detailsSection = card.querySelector('.details-section');
+            
+            if (infoButton && detailsSection) {
+                infoButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    detailsSection.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
